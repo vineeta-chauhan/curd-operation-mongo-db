@@ -7,7 +7,7 @@ const bodyparser =require('body-parser');
 const employeeController = require('./controllers/employeeController');
 var app = express();
 app.use(bodyparser.urlencoded({
-    ectended:true
+    extended: true
 }));
 app.set('views', path.join(__dirname, '/views/'));
 app.engine('hbs', exphbs({
